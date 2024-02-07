@@ -1,5 +1,6 @@
 import timeit
 
+# ----------------------NOTES I MADE TO FIGURE THIS SHIT OUT----------------------------
 # Given n+1 distinct nodes there exists a unique polynomial of degree n which interpolates each node
 # test_set = [(1, 2), (2, 3), (4, 11), (6, 5)]
 
@@ -26,6 +27,10 @@ import timeit
 # so A = V^-1 Y
 
 # so just find the inverse of the matrix!
+
+#------------------------------------------------------------------------------------------
+
+# NOTE: This code is slow af, but it works
 
 def get_cofactors(matrix):
     n = len(matrix)
